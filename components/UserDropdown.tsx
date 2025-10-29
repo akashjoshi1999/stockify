@@ -29,7 +29,7 @@ const UserDropdown = () => {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="flex item-center gap-3 text-grey-4 hover:text-yellow">
+                <Button variant="ghost" className="flex items-center gap-3 text-grey-4 hover:text-yellow">
                     <Avatar>
                         <AvatarImage src="https://github.com/shadcn.png" />
                         <AvatarFallback className="bg-yellow-500 text-yellow-900 text-sm font-bold">{user.name}</AvatarFallback>
@@ -46,7 +46,7 @@ const UserDropdown = () => {
             </DropdownMenuLabel>
             <DropdownMenuContent className="text-grey-400">
                 <DropdownMenuLabel>
-                    <div className="flex relative item-center gap-3 py-2">
+                    <div className="flex relative items-center gap-3 py-2">
                         <Avatar className="h-10 w-10">
                             <AvatarImage src="https://github.com/shadcn.png" />
                             <AvatarFallback className="bg-yellow-500 text-yellow-900 text-sm font-bold">{user.name}</AvatarFallback>
@@ -64,7 +64,7 @@ const UserDropdown = () => {
                     <LogOut className="h-4 w-4 mr-2" />
                     Logout
                 </DropdownMenuItem>
-                <DropdownMenuSeparator className="hidden sm-block bg-grey-600"/>
+                <DropdownMenuSeparator className="hidden sm:block bg-grey-600"/>
                 <nav className="sm:hidden">
                     <NavItems />
                 </nav>
